@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezzy Hotel</title>
+    <link rel="shortcut icon" href="asset/EZZY-HOTEL-LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="plugins/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/locomotive.css">
+    <link rel="stylesheet" href="plugins/swipper.min.css">
   </head>
   <body>
+    <div id="cursor">
+      <div class="inner-cursor">VIEW</div>
+    </div>
     <nav class="d-flex justify-content-between align-items-center">
       <div id="nav-btn" class="btn-nav-link d-flex flex-column align-items-center">
         <div class="outer-nav-link mb-1">
@@ -59,8 +64,8 @@
             <h1>Feature</h1>
             <img src="asset/icon-bunga.png" alt="">
           </div>
-          <div id="btn-link-gallery" class="outer-nav-menu d-flex align-items-center justify-content-between">
-            <h1>Gallery</h1>
+          <div id="btn-link-facilities" class="outer-nav-menu d-flex align-items-center justify-content-between">
+            <h1>Facilities</h1>
             <img src="asset/icon-bunga.png" alt="">
           </div>
         </div>
@@ -99,28 +104,28 @@
     <div class="side-nav-menu">
       <div class="inner-side-nav-menu">
         <img class="content-side-nav1 active" src="asset/side-nav1.jpg" alt="">
-        <img class="content-side-nav2" src="asset/side-nav2.png" alt="">
+        <img class="content-side-nav2" src="asset/side-nav2.JPG" alt="">
         <img class="content-side-nav3" src="asset/side-nav3.jpg" alt="">
         <img class="content-side-nav4" src="asset/side-nav4.jpg" alt="">
         <img class="content-side-nav5" src="asset/side-nav5.jpg" alt="">
       </div>
     </div>
     <div class="close-nav"></div>
-    <div class="scroll-container">
-      <div class="home d-flex">
+    <div class="scrollContainer">
+      <div class="home d-flex" >
         <div class="outer-text-home d-flex justify-content-center align-items-center">
           <div class="inner-text-home">
             <h1>Experience Pure Grandeur at Ezzy Hotel</h1>
           </div>
         </div>
-        <video src="asset/video102922081336735_1080p.mp4" loop muted autoplay></video>
+        <!-- <video src="asset/video102922081336735_1080p.mp4" loop muted autoplay></video> -->
       </div>
       <div class="about-home d-flex justify-content-between">
         <div class="left-about-home d-flex justify-content-center align-items-center">
           <div class="text-about-home d-flex flex-column justify-content-center">
             <h3 class="mb-4">&#8226; Corporate &#8226;</h3>
-            <h1 class="mb-5">Comfort is the <br>main thing</h1>
-            <p class="mb-5">Comfort is here, defining the essence of our hospitality. At EzzyHotel, we prioritize your ease and relaxation. Our rooms aredesigned to be your tranquil haven, equipped with modern amenitiesfor a hassle-free stay. From cozy bedding to thoughtful decor,we've taken care of every detail to ensure your utmost comfort.</p>
+            <h1 class="mb-5">Harmony in Comfort, Tranquil Retreat</h1>
+            <p class="mb-5">Discover serenity in our Comfort Haven, where every detail is thoughtfully designed for your ultimate relaxation. From plush accommodations to personalized services, experience a retreat that prioritizes your well-being. Welcome to Ezzy Hotel, where harmony and comfort intertwine, offering a sanctuary like no other.</p>
             <div id="btn-about" class="btn-line">
               <h4>
                 <img src="asset/icon-bunga.png" alt=""> 
@@ -147,8 +152,8 @@
       </div>
       <div class="home-room p-ats">
         <div class="left-home-room d-flex flex-column align-items-center justify-content-around">
-          <img src="asset/home-room-mini1.jpg" alt="">
-          <img src="asset/home-room-long1.jpg" alt="">
+          <img src="asset/home-room-mini1.jpg" alt="" >
+          <img src="asset/home-room-long1.jpg" alt="" >
         </div>
         <div
           class="center-home-room d-flex flex-column align-items-center justify-content-center">
@@ -189,74 +194,342 @@
         <div class="area-feature-home d-flex justify-content-around">
           <div class="box-feature-home col-4 d-flex flex-column">
             <div class="text-box-feature d-flex flex-column justify-content-center align-items-center">
-              <h1>Coffe & Tea Laboratory</h1>
-              <p>Explore a curated selection of premium coffees and teas sourced from around the globe.</p>
+              <h1>Rooftop Wedding Chapel</h1>
+              <p>Nestled high above the cityscape, our exclusive wedding venue offers an enchanting setting for your special day.</p>
             </div>
             <div class="shaddow-box-feature"></div>
           </div>
           <div class="box-feature-home col-4 d-flex flex-column">
             <div class="text-box-feature d-flex flex-column justify-content-center align-items-center">
-              <h1>Vivekananda Corner</h1>
-              <p>Discover serenity in our Tranquil Reading Retreat, a haven designed for moments of quiet reflection.</p>
+              <h1>Ezzy Rooftop Lounge & Dining</h1>
+              <p>Enjoy special flavors carefully crafted by our culinary craftsmen, complemented by a selection of quality drinks.</p>
             </div>
             <div class="shaddow-box-feature"></div>
           </div>
           <div class="box-feature-home col-4 d-flex flex-column">
             <div class="text-box-feature d-flex flex-column justify-content-center align-items-center">
-              <h1>Pastry Kitchen Studio</h1>
-              <p>Savor the artistry of flavors at our Pastry Kitchen Studio, where culinary magic unfolds.</p>
+              <h1>Adult & Kid's Pool</h1>
+              <p>Dive into relaxation at our Adult & Kid's Pool, a haven where both serenity and joy coexist. </p>
             </div>
             <div class="shaddow-box-feature"></div>
           </div>
         </div>
       </div>
-      <!-- <div class="gallery-home">
-        <div class="text-gallery-home d-flex flex-column justify-content-center">
-          <h1>Explore Our Gallery of Timeless Elegance.</h1>
-          <p>Explore the Essence of Luxury and Warmth in Our Homepage Gallery. Delve into Captivating Moments, Crafted to Inspire Your Stay and Ignite Your Imagination.</p>
-          <div id="btn-gallery" class="btn-line">
-            <h4>
-              <img src="asset/icon-bunga.png" alt=""> 
-              <div class="outer-btn-line">
-                <div class="inner-btn-line d-flex flex-column">
-                  <span>EXPLORE MORE</span>
-                  <span>EXPLORE MORE</span>
-                </div> 
+      <div class="facilities-home p-ats d-flex flex-column align-items-center">
+        <div class="text-facilities-home">
+          <h1>Facilities & accommodations</h1>
+          <p>Immerse yourself in a world of unparalleled comfort and convenience at Ezzy Hotel. Our meticulously curated facilities and accommodations redefine the standard of luxury living. Indulge in contemporary elegance with our well-appointed rooms and suites, each designed for a seamless blend of style and functionality. Our state-of-the-art facilities cater to every need, from rejuvenating spa experiences to cutting-edge fitness centers.</p>
+        </div>
+        <div class="area-facilities-home">
+          <div class="controller-facilities-home"></div>
+          <div class="shaddow-facilities-home"></div>
+          <div class="text-facilities-swiper swiper-container">
+            <div class="swiper-wrapper" style="position: absolute;z-index: 10;">
+              <div class="swiper-slide">
+                <h1>Ezzy Fitness Center</h1>
               </div>
-              <img src="asset/icon-bunga.png" alt=""></h4>
-            <div class="outer-line">
-              <div class="inner-line">
-                <div class="line"></div>
-                <div class="line"></div>
+              <div class="swiper-slide">
+                <h1>Ezzy Meeting Room</h1>
+              </div>
+              <div class="swiper-slide">
+                <h1>Ezzy Yoga Class</h1>
+              </div>
+              <div class="swiper-slide">
+                <h1>Ezzy Spa Treatment</h1>
+              </div>
+              <div class="swiper-slide">
+                <h1>Ezzy Bar</h1>
+              </div>
+              <div class="swiper-slide">
+                <h1>Ezzy Restaurant</h1>
+              </div>
+              <div class="swiper-slide">
+                <h1>Ezzy Kids Club</h1>
+              </div>
+            </div>
+          </div>
+          <div class="img-facilities-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="asset/facilities-fitness.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-meeting.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-yoga.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-spa.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-bar.JPG" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-restaurant.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="asset/facilities-kids-club.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="slider-gallery-home"></div>
-      </div> -->
+      </div>
     </div>
 
     <script src="plugins/jquery.js"></script>
     <script src="plugins/bootstrap.min.js"></script>
+    <script src="plugins/locomotive.js"></script>
     <script src="plugins/gsap.min.js"></script>
     <script src="plugins/scrollTrigger.min.js"></script>
-    <script src="plugins/locomotive.js"></script>
+    <script src="plugins/swipper.min.js"></script>
     <script>
       gsap.registerPlugin(ScrollTrigger);
-      // const scroll = new LocomotiveScroll({
-      //   el: document.querySelector(".scroll-container"),
-      //   smooth: true,
-      // });
+      const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".scrollContainer"),
+        smooth: true
+      });
 
-      // scroll.on("scroll", function (obj) {
-      //   if (obj.scroll.y > $(".home").height()) {
-      //     $(".btn-nav-link").find("h1").addClass("scroll");
-      //     $(".btn-nav-link").find(".nav-line").addClass("scroll");
-      //   } else {
-      //     $(".btn-nav-link").find("h1").removeClass("scroll");
-      //     $(".btn-nav-link").find(".nav-line").removeClass("scroll");
-      //   }
-      // });
+      locoScroll.on("scroll", ScrollTrigger.update);
+
+      ScrollTrigger.scrollerProxy(".scrollContainer", {
+      scrollTop(value) {
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+        pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
+      });
+
+      locoScroll.on("scroll", function (obj) {
+        if (obj.scroll.y > $(".home").height()) {
+          $(".btn-nav-link").find("h1").addClass("scroll");
+          $(".btn-nav-link").find(".nav-line").addClass("scroll");
+        } else {
+          $(".btn-nav-link").find("h1").removeClass("scroll");
+          $(".btn-nav-link").find(".nav-line").removeClass("scroll");
+        }
+      });
+      
+      // Cursor
+      let cursor = $("#cursor");
+      let wind = window.innerWidth;
+      let innerCursor = $(".inner-cursor");
+      let controllerFacilities = $(".controller-facilities-home");
+        
+        function movecursor(e) {
+          let widthcursor = $("#cursor").width()/2;
+            wind = window.innerWidth;
+
+            if(e.clientX > wind / 2){
+                gsap.to(cursor, {
+                duration: 0.3,
+                delay:0.1,
+                x: e.clientX - widthcursor,
+                y: e.clientY -  widthcursor,
+                ease: "power2.out"
+            });
+            }else{
+                gsap.to(cursor, {
+                duration: 0.3,
+                delay:0.1,
+                x: e.clientX - widthcursor,
+                y: e.clientY -  widthcursor,
+                ease: "power2.out"
+            });
+            }
+
+            if (e.clientX > wind / 2 && e.target === controllerFacilities[0]) {
+              innerCursor.text("NEXT");
+            } else if (e.target === controllerFacilities[0]) {
+              innerCursor.text("PREV");
+            } else {
+              innerCursor.text("VIEW");
+            }
+        }
+
+        $(window).on('mousemove', movecursor);
+        $(window).resize(movecursor);
+
+        // Carousel Facilities
+
+        $(".area-facilities-home").mouseenter(function(){
+          $("#cursor").css("display","flex");
+        });
+        $(".area-facilities-home").mouseleave(function(){
+          $("#cursor").css("display","none");
+        });
+        var imageFacilitiesSwiper = new Swiper('.img-facilities-swiper', {
+          direction: 'horizontal',
+          loop: true,
+          effect: 'fade',
+        });
+        var textFacilitiesSwiper = new Swiper('.text-facilities-swiper', {
+          direction: 'horizontal',
+          loop: true,
+        });
+
+  $(".controller-facilities-home").on("click", function(event){
+    const container = $(this);
+    const containerRect = container.offset();
+    const clickX = event.pageX - containerRect.left;
+
+    if (clickX < container.width() / 2) {
+      imageFacilitiesSwiper.slidePrev();
+      textFacilitiesSwiper.slidePrev();
+    } else {
+      imageFacilitiesSwiper.slideNext();
+      textFacilitiesSwiper.slideNext();
+    }
+  });
+  
+      // Animation GSAP
+      gsap.from(".right-about-home img:nth-child(1)",{
+        clipPath: 'inset(100% 0 0 0)',
+        duration:1,
+        delay:1,
+        ease: "power2.out",
+        scrollTrigger:{
+            trigger: ".right-about-home img:nth-child(1)",
+            start: "top center",
+            scroller:".scrollContainer",
+            toggleActions: "play none none none",
+        },
+        });
+      gsap.from(".right-about-home img:nth-child(2)",{
+            scrollTrigger:{
+                trigger: ".right-about-home img:nth-child(2)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 0 0 100%)',
+            duration:1,
+            delay:0.2,
+            ease: "power2.out"
+        });
+      gsap.from(".left-home-room img:nth-child(1)",{
+            scrollTrigger:{
+                trigger: ".left-home-room img:nth-child(1)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 100% 0 0)',
+            duration:1,
+            delay:0.2,
+            ease: "power2.out"
+        });
+      gsap.from(".left-home-room img:nth-child(2)",{
+            scrollTrigger:{
+                trigger: ".left-home-room img:nth-child(2)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(100% 0 0 0)',
+            duration:1,
+            delay:0.4,
+            ease: "power2.out"
+        });
+      gsap.from(".center-home-room img:nth-child(1)",{
+            scrollTrigger:{
+                trigger: ".center-home-room img:nth-child(1)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            scale: 0,
+            duration:1,
+            delay:0.2,
+            ease: "power2.out"
+        });
+      gsap.from(".right-home-room img:nth-child(1)",{
+            scrollTrigger:{
+                trigger: ".right-home-room img:nth-child(1)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 0 100% 0)',
+            duration:1,
+            delay:0.2,
+            ease: "power2.out"
+        });
+      gsap.from(".right-home-room img:nth-child(2)",{
+            scrollTrigger:{
+                trigger: ".right-home-room img:nth-child(2)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 0 0 100%)',
+            duration:1,
+            delay:0.4,
+            ease: "power2.out"
+        });
+        gsap.from(".pembatas-home .line:nth-child(1)",{
+            scrollTrigger:{
+                trigger: ".pembatas-home .line:nth-child(1)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 100% 0 0)',
+            duration:2,
+            delay:0.4,
+            ease: "power2.out"
+        });
+      gsap.from(".pembatas-home .line:nth-child(3)",{
+            scrollTrigger:{
+                trigger: ".pembatas-home .line:nth-child(3)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(0 0 0 100%)',
+            duration:2,
+            delay:0.4,
+            ease: "power2.out"
+        });
+      gsap.from(".pembatas-home img",{
+            scrollTrigger:{
+                trigger: ".pembatas-home img",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            scale: 0,
+            duration:1,
+            delay:2,
+            ease: "power2.out"
+        });
+
+        gsap.from(".feature-home .box-feature-home:nth-child(1)",{
+            scrollTrigger:{
+                trigger: ".feature-home .box-feature-home:nth-child(1)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(100% 0 0 0)',
+            duration:1.5,
+            delay:0.1,
+            ease: "power2.out"
+        });
+        gsap.from(".feature-home .box-feature-home:nth-child(2)",{
+            scrollTrigger:{
+                trigger: ".feature-home .box-feature-home:nth-child(2)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(100% 0 0 0)',
+            duration:1.5,
+            delay:0.2,
+            ease: "power2.out"
+        });
+        gsap.from(".feature-home .box-feature-home:nth-child(3)",{
+            scrollTrigger:{
+                trigger: ".feature-home .box-feature-home:nth-child(3)",
+                scroller:".scrollContainer",
+                toggleActions: "play none none none"
+            },
+            clipPath: 'inset(100% 0 0 0)',
+            duration:1.5,
+            delay:0.3,
+            ease: "power2.out"
+        });
 
       $(".btn-nav-link").mouseenter(function () {
         $(this).find(".inner-nav-link").addClass("active");
@@ -337,145 +610,27 @@
       $("#btn-link-feature").mouseleave(function () {
         $(".content-side-nav4").removeClass("active");
       });
-      $("#btn-link-gallery").mouseenter(function () {
+      $("#btn-link-facilities").mouseenter(function () {
         $(".content-side-nav5").addClass("active");
       });
-      $("#btn-link-gallery").mouseleave(function () {
+      $("#btn-link-facilities").mouseleave(function () {
         $(".content-side-nav5").removeClass("active");
       });
 
-      // Animation GSAP
-      gsap.from(".right-about-home img:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".right-about-home img:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(100% 0 0 0)',
-            duration:1,
-            delay:1,
-            ease: "power2.out"
-        });
-      gsap.from(".right-about-home img:nth-child(2)",{
-            scrollTrigger:{
-                trigger: ".right-about-home img:nth-child(2)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 0 0 100%)',
-            duration:1,
-            delay:0.2,
-            ease: "power2.out"
-        });
-      gsap.from(".left-home-room img:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".left-home-room img:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 100% 0 0)',
-            duration:1,
-            delay:0.2,
-            ease: "power2.out"
-        });
-      gsap.from(".left-home-room img:nth-child(2)",{
-            scrollTrigger:{
-                trigger: ".left-home-room img:nth-child(2)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(100% 0 0 0)',
-            duration:1,
-            delay:0.4,
-            ease: "power2.out"
-        });
-      gsap.from(".center-home-room img:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".center-home-room img:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            scale: 0,
-            duration:1,
-            delay:0.2,
-            ease: "power2.out"
-        });
-      gsap.from(".right-home-room img:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".right-home-room img:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 0 100% 0)',
-            duration:1,
-            delay:0.2,
-            ease: "power2.out"
-        });
-      gsap.from(".right-home-room img:nth-child(2)",{
-            scrollTrigger:{
-                trigger: ".right-home-room img:nth-child(2)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 0 0 100%)',
-            duration:1,
-            delay:0.4,
-            ease: "power2.out"
-        });
-        gsap.from(".pembatas-home .line:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".pembatas-home .line:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 100% 0 0)',
-            duration:2,
-            delay:0.4,
-            ease: "power2.out"
-        });
-      gsap.from(".pembatas-home .line:nth-child(3)",{
-            scrollTrigger:{
-                trigger: ".pembatas-home .line:nth-child(3)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(0 0 0 100%)',
-            duration:2,
-            delay:0.4,
-            ease: "power2.out"
-        });
-      gsap.from(".pembatas-home img",{
-            scrollTrigger:{
-                trigger: ".pembatas-home img",
-                toggleActions: "restart none none none"
-            },
-            scale: 0,
-            duration:1,
-            delay:2,
-            ease: "power2.out"
-        });
+      $(".box-feature-home").mouseenter(function(){
+        $(this).css("cursor", "none")
+        $(this).find(".text-box-feature").addClass("none");
+        $("#cursor").css("display", "flex");
+        $(this).find(".shaddow-box-feature").css("opacity","0.5")
+      });
+      $(".box-feature-home").mouseleave(function(){
+        $(this).find(".text-box-feature").removeClass("none");
+        $("#cursor").css("display", "none");
+        $(this).find(".shaddow-box-feature").css("opacity","1")
+      });
 
-        gsap.from(".feature-home .box-feature-home:nth-child(1)",{
-            scrollTrigger:{
-                trigger: ".feature-home .box-feature-home:nth-child(1)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(100% 0 0 0)',
-            duration:1.5,
-            delay:0.1,
-            ease: "power2.out"
-        });
-        gsap.from(".feature-home .box-feature-home:nth-child(2)",{
-            scrollTrigger:{
-                trigger: ".feature-home .box-feature-home:nth-child(2)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(100% 0 0 0)',
-            duration:1.5,
-            delay:0.2,
-            ease: "power2.out"
-        });
-        gsap.from(".feature-home .box-feature-home:nth-child(3)",{
-            scrollTrigger:{
-                trigger: ".feature-home .box-feature-home:nth-child(3)",
-                toggleActions: "restart none none none"
-            },
-            clipPath: 'inset(100% 0 0 0)',
-            duration:1.5,
-            delay:0.3,
-            ease: "power2.out"
-        });
+      ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+        ScrollTrigger.refresh();
     </script>
   </body>
 </html>

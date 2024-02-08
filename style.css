@@ -16,16 +16,30 @@ body {
   padding-bottom: 20px;
 }
 
-.home {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+#cursor{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  pointer-events: none;
+  background-color: rgba(241, 241, 241, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.inner-cursor{
+ letter-spacing: 2px;
+ line-height: 100%;
+ color: #002039; 
 }
 
 nav {
   width: 100%;
-  height: 80px;
-  padding: 10px 5%;
+  height: fit-content;
+  padding: 30px 5% 0px;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -257,6 +271,12 @@ nav h1.scroll {
   background-color: rgba(37, 36, 36, 0.2);
   backdrop-filter: blur(5px);
   display: none;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .outer-text-home {
@@ -526,21 +546,22 @@ nav h1.scroll {
 }
 
 .area-feature-home .box-feature-home:nth-child(1){
-  background-image: url("asset/coffee-and-tea-lab.jpeg");
+  background-image: url("asset/feature-wedding.webp");
 }
 
 .area-feature-home .box-feature-home:nth-child(2){
-  background-image: url("asset/Vivekananda.jpg");
+  background-image: url("asset/feature-dining.jpg");
 }
 
 .area-feature-home .box-feature-home:nth-child(3){
-  background-image: url("asset/Pastry.jpg");
+  background-image: url("asset/feature-swimming.jpg");
 }
 
 .box-feature-home .shaddow-box-feature{
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+  transition: 0.3s ease;
 }
 
 .box-feature-home .text-box-feature{
@@ -548,6 +569,10 @@ nav h1.scroll {
   height: 100%;
   padding: 5%;
   position: absolute;
+}
+
+.box-feature-home .text-box-feature.none{
+  opacity: 0;
 }
 
 .box-feature-home .text-box-feature h1{
@@ -566,31 +591,78 @@ nav h1.scroll {
   margin-bottom: 0px;
 }
 
-.gallery-home{
+.facilities-home{
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 20px 3%;
-}
-
-.gallery-home .text-gallery-home{
-  width: 40%;
   height: 100%;
 }
 
-.text-gallery-home h1{
+.text-facilities-home{
+  width: 55%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text-facilities-home h1{
   font-family: "Playfair Display", serif;
-  letter-spacing: 2px;
-  font-size: 42px;
   color: #002039;
-  margin-bottom: 20px;
+  font-size: 55px;
+  margin-bottom: 25px;
 }
 
-.text-gallery-home p{
+.text-facilities-home p{
   color: #676767;
-  width: 90%;
-  line-height: 1.7;
-  margin-bottom: 30px;
+}
+
+.area-facilities-home{
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.controller-facilities-home{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 4;
+}
+
+.shaddow-facilities-home{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 36, 36, 0.4);
+}
+
+.img-facilities-swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.img-facilities-swiper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-facilities-swiper{
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+}
+
+.text-facilities-swiper h1{
+  color: #fff;
+  font-family: "Cinzel", serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin: 0;
 }
